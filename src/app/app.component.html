@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+<div ng-app="">
+	<form name="myForm">
+		Email: <input (keyup)="onKey($event)" />
+		<button (click)="deleteUser()">Delete</button>
+	</form>
+	<p>Deleted User Details</p>
+	<p>Deleted User Email : {{deletedUserEmail}}</p>
+	<p>Deleted User Name : {{deletedUserName}}</p>
+</div>
